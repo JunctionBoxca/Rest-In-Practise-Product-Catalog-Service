@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title type="text">Restbucks products and promotions</title>
+  <id>urn:uuid:41594206-7687-461e-9229-47712a064aa6</id>
+  <updated>2009-09-11T09:28:37+01:00</updated>
+  <author>
+    <name>Product Catalog</name>
+  </author>
+  <generator>Product Catalog</generator>
+  <link rel="self" href="http://localhost/product-catalog/notifications/recent" />
+  <link rel="via" href="http://localhost/product-catalog/notifications/?page=6" />
+  <link rel="prev-archive" href="http://localhost/product-catalog/notifications/?page=5" />
+  <entry>
+    <id>tag:restbucks.com,2009-09-11:28</id>
+    <title type="text">event: 29</title>
+    <updated>2009-09-11T09:28:35+01:00</updated>
+    <link rel="related" href="http://product/29" />
+    <link rel="self" href="http://localhost/product-catalog/notifications/notification/28" />
+    <content type="text/plain">
+      <string xmlns="http://schemas.microsoft.com/2003/10/Serialization/">29</string>
+    </content>
+  </entry>
+  <entry>
+    <id>tag:restbucks.com,2009-09-11:27</id>
+    <title type="text">event: 28</title>
+    <updated>2009-09-11T09:28:33+01:00</updated>
+    <link rel="related" href="http://product/28" />
+    <link rel="self" href="http://localhost/product-catalog/notifications/notification/27" />
+    <content type="text/plain">
+      <string xmlns="http://schemas.microsoft.com/2003/10/Serialization/">28</string>
+    </content>
+  </entry>
+  <entry>
+    <id>tag:restbucks.com,2009-09-11:26</id>
+    <title type="text">event: 27</title>
+    <updated>2009-09-11T09:28:31+01:00</updated>
+    <link rel="related" href="http://product/27" />
+    <link rel="self" href="http://localhost/product-catalog/notifications/notification/26" />
+    <content type="text/plain">
+      <string xmlns="http://schemas.microsoft.com/2003/10/Serialization/">27</string>
+    </content>
+  </entry>
+  <entry>
+    <id>tag:restbucks.com,2009-09-11:25</id>
+    <title type="text">event: 26</title>
+    <updated>2009-09-11T09:28:29+01:00</updated>
+    <link rel="related" href="http://product/26" />
+    <link rel="self" href="http://localhost/product-catalog/notifications/notification/25" />
+    <content type="text/plain">
+      <string xmlns="http://schemas.microsoft.com/2003/10/Serialization/">26</string>
+    </content>
+  </entry>
+</feed>

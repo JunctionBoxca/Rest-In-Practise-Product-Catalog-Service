@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ <title>Restbucks products and promotions</title>
+ <link rel="self" href="http://restbucks.com/product-catalogue/archive" />
+ <id>urn:uuid:2cdf93ce-b430-4c99-80f8-34e31d2e8183</id>
+ <generator uri="http://restbucks.com/product-catalogue">Product Catalog</generator>
+ <author><name>Product Catalog</name></author>
+ <updated>2009-08-06T23:45:53Z</updated>
+ <entry>
+   <title>promotion</title>
+   <link rel="self" href="http://restbucks.com/product-catalogue/notifications/0" />
+   <link rel="related" href="http://restbucks.com/promotions/1230599733" />
+   <id>tag:restbucks.com,2009-08-07:0</id>
+   <updated>2009-08-06T23:45:53Z</updated>
+   <content type="application/xml">
+     <product xmlns="http://restbucks.com/products" uri="http://restbucks.com/promotions/1230599733">      
+       <name>Fairtrade Roma Coffee Beans</name>
+       <size>1kg</size>
+       <price>10</price>
+     </product>
+   </content>
+ </entry>
+</feed>

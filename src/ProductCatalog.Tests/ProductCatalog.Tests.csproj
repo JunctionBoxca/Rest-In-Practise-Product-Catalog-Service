@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{872BCFE9-4332-49D5-A09D-09649EA45C49}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProductCatalog.Tests</RootNamespace>
+    <AssemblyName>ProductCatalog.Tests</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="nunit.framework, Version=2.5.0.9122, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\tools\nunit\framework\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Restbucks.Xml, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\Restbucks.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="Rhino.Mocks, Version=3.4.0.0, Culture=neutral, PublicKeyToken=0b3305902db7183f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\tools\rhinomocks\Rhino.Mocks.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel.Web">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Notifications\Http\CacheControlTests.cs" />
+    <Compile Include="Notifications\Http\ContentTypeTests.cs" />
+    <Compile Include="Notifications\Http\ETagTests.cs" />
+    <Compile Include="Notifications\Http\HeaderQueryTests.cs" />
+    <Compile Include="Notifications\Http\IfNoneMatchTests.cs" />
+    <Compile Include="Notifications\Http\NullConditionTests.cs" />
+    <Compile Include="Notifications\Http\ResponseContextTests.cs" />
+    <Compile Include="Notifications\Http\SendChunkedTests.cs" />
+    <Compile Include="Notifications\Model\ArchiveFeedTests.cs" />
+    <Compile Include="Notifications\Model\CopyEntityBodyTests.cs" />
+    <Compile Include="Notifications\Model\FeedMappingsTests.cs" />
+    <Compile Include="Notifications\Model\FeedOfRecentEventsTests.cs" />
+    <Compile Include="Notifications\Model\HeadersOnlyRepresentationTests.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Notifications\Model\NullRepresentationTests.cs" />
+    <Compile Include="Notifications\Model\RepositoryTests.cs" />
+    <Compile Include="Notifications\Model\ResourceIdTests.cs" />
+    <Compile Include="Notifications\Model\ResourceIdToStoreIdConverterTests.cs" />
+    <Compile Include="Notifications\Model\RewriteEntityBodyTests.cs" />
+    <Compile Include="Notifications\Model\WorkingFeedTests.cs" />
+    <Compile Include="Notifications\Net\HttpListenerRequestWrapperTests.cs" />
+    <Compile Include="Notifications\Net\HttpListenerResponseWrapperTests.cs" />
+    <Compile Include="Notifications\NotificationsServiceTests.cs" />
+    <Compile Include="Notifications\Persistence\FileBasedAtomDocumentTests.cs" />
+    <Compile Include="Notifications\Persistence\FileStoreTests.cs" />
+    <Compile Include="Notifications\Persistence\StoreIdTests.cs" />
+    <Compile Include="Notifications\Service\NullFeedMappingsTests.cs" />
+    <Compile Include="Notifications\Service\RoutesTests.cs" />
+    <Compile Include="Notifications\Service\ServiceHostTests.cs" />
+    <Compile Include="Notifications\Utility\Input.cs" />
+    <Compile Include="Notifications\Utility\Output.cs" />
+    <Compile Include="Notifications\Utility\StreamBackedRepresentation.cs" />
+    <Compile Include="Notifications\Utility\WebServer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Shared\Utility\ResourceStreams.cs" />
+    <Compile Include="Writer\Feeds\ArchiveFeedTests.cs" />
+    <Compile Include="Writer\Feeds\EntryTests.cs" />
+    <Compile Include="Writer\Feeds\FeedBuilderTests.cs" />
+    <Compile Include="Writer\Feeds\FeedMappingTests.cs" />
+    <Compile Include="Writer\Feeds\IdTests.cs" />
+    <Compile Include="Writer\Feeds\LinksTests.cs" />
+    <Compile Include="Writer\Feeds\PrevArchiveLinkGeneratorTests.cs" />
+    <Compile Include="Writer\Feeds\RecentEventsFeedTests.cs" />
+    <Compile Include="Writer\FeedWriterTests.cs" />
+    <Compile Include="Writer\Model\EventBufferTests.cs" />
+    <Compile Include="Writer\Persistence\FileNameTests.cs" />
+    <Compile Include="Writer\Tasks\ArchivingRecentEventsFeedTests.cs" />
+    <Compile Include="Writer\Tasks\CreatingNewRecentEventsFeedTests.cs" />
+    <Compile Include="Writer\Tasks\IdentifyingRecentEventsFeedTests.cs" />
+    <Compile Include="Writer\Tasks\NotifyingListenersTests.cs" />
+    <Compile Include="Writer\Tasks\QueryingEventsTests.cs" />
+    <Compile Include="Writer\Tasks\RequeryingEventsTests.cs" />
+    <Compile Include="Writer\Tasks\SavingRecentEventsFeedTests.cs" />
+    <Compile Include="Writer\Tasks\TerminateTests.cs" />
+    <Compile Include="Writer\Tasks\UpdatingRecentEventsFeedTests.cs" />
+    <Compile Include="Writer\Utility\ArchiveFeedExtensions.cs" />
+    <Compile Include="Writer\Utility\EntryExtensions.cs" />
+    <Compile Include="Writer\Utility\EventBodyBuilder.cs" />
+    <Compile Include="Writer\Utility\EventBufferBuilder.cs" />
+    <Compile Include="Writer\Utility\EventBuilder.cs" />
+    <Compile Include="Writer\Utility\FakeTimer.cs" />
+    <Compile Include="Writer\Utility\FeedMappingExtensions.cs" />
+    <Compile Include="Writer\Utility\FileNameExtensions.cs" />
+    <Compile Include="Writer\Utility\IdExtensions.cs" />
+    <Compile Include="Writer\Utility\InMemoryFileSystem.cs" />
+    <Compile Include="Writer\Utility\IStateExtensions.cs" />
+    <Compile Include="Writer\Utility\PrivateField.cs" />
+    <Compile Include="Writer\Utility\RecentEventsFeedBuilder.cs" />
+    <Compile Include="Writer\Utility\RecentEventsFeedExtensions.cs" />
+    <Compile Include="Writer\Utility\Repeat.cs" />
+    <Compile Include="Writer\Utility\SampleLinks.cs" />
+    <Compile Include="Writer\Utility\SyndicationFeeds.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ProductCatalog.Notifications\ProductCatalog.Notifications.csproj">
+      <Project>{4A73DF42-641F-4BDE-ACE1-164594A5425D}</Project>
+      <Name>ProductCatalog.Notifications</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ProductCatalog.Shared\ProductCatalog.Shared.csproj">
+      <Project>{C502815C-5419-42FE-9A45-625370057CC8}</Project>
+      <Name>ProductCatalog.Shared</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ProductCatalog.Writer\ProductCatalog.Writer.csproj">
+      <Project>{E09B0A4A-E0D0-4A26-9FAF-CF5F80F5B6C1}</Project>
+      <Name>ProductCatalog.Writer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Data\first-temp-feed\4ad58931-cdd5-4368-95fb-43a5328d0e30.atom">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\notification\entry.atom">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\temp-feeds\0eace07e-e698-4d98-8f8e-37d361cf973a.atom">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\temp-feeds\1b3d1bd9-9922-46af-8aab-01933502d1ee.atom">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\temp-feeds\341d5f60-7667-4946-9291-765b85229c0a.atom">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\temp-feeds\6f79b23e-0e0f-45a1-b4bf-ecc5234aeca2.atom">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\temp-feeds\af0107b4-c860-42c2-85c0-152a39c38061.atom">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\temp-feeds\bca54d20-8745-4fe2-bf1a-0e018188b0a4.atom">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\temp-feeds\f8bead64-569e-4c5a-8b6d-450116138315.atom">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Data\non-atom-files\non-atom-content.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Data\productcatalog\archive\archive.atom">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\productcatalog\current.atom">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Data\empty-directory\" />
+    <Folder Include="Data\productcatalog\entries\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

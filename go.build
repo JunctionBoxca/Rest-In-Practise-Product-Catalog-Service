@@ -1,0 +1,56 @@
+<project name="Build Restbcuks.ProductCatalog" default="build">
+  
+  <property name="configuration" value="debug"/>
+  <property name="base.dir" value="${project::get-base-directory()}"/>
+  <property name="output.dir" value="${base.dir}/output"/>
+  <property name="logs.dir" value="${output.dir}/logs"/>
+  <property name="binaries.dir" value="${base.dir}/src/ProductCatalog.Host/bin/${configuration}"/>
+  <property name="tests.dir" value="${base.dir}/src/ProductCatalog.Tests/bin/${configuration}"/>
+  <property name="solution.file" value="Restbucks.ProductCatalog.sln"/>
+  <property name="unit.test.assembly" value="ProductCatalog.Tests.dll"/>
+
+    
+  <target name="clean" description="Delete all previously compiled binaries.">    
+    <delete dir="${output.dir}" />
+  </target>
+
+  <target name="create.output.directories" description="Create output directories.">
+    <mkdir dir="${output.dir}" />
+    <mkdir dir="${logs.dir}" />
+  </target>
+
+  <target name="build.solution" description="Build solution.">
+    <msbuild project="${solution.file}">
+      <arg value="/property:Configuration=${configuration}"/>
+      <arg value="/t:Rebuild"/>
+      <arg value="/verbosity:quiet"/>
+    </msbuild>
+  </target>
+
+  <target name="deploy" description="Deploy to output directory.">
+    <copy todir="${output.dir}">
+      <fileset basedir="${binaries.dir}">
+        <include name="**/*.dll" />
+        <include name="**/*.exe" />
+        <include name="**/*.exe.config" />
+      </fileset>
+    </copy>
+  </target>
+
+  <target name="run.unit.tests" description="Run unit tests.">
+    <exec program="${base.dir}/tools/nunit/nunit-console.exe"
+      workingdir="${tests.dir}"
+      commandline="${unit.test.assembly} /xml:TestResults.xml /nologo"/>
+  </target>
+
+
+  <target name="start.application">
+    <exec program="run.bat" spawn="true"/>
+  </target>
+
+  <target name="build" description="Build application." depends="clean, create.output.directories, build.solution, run.unit.tests, deploy"/>
+
+
+  <target name="run" description="Build and run application." depends="build, start.application"/>
+
+</project>

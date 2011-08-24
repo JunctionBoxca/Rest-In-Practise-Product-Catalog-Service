@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4A73DF42-641F-4BDE-ACE1-164594A5425D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProductCatalog.Notifications</RootNamespace>
+    <AssemblyName>ProductCatalog.Notifications</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Restbucks.Xml, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\Restbucks.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel.Web">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Http\CacheControl.cs" />
+    <Compile Include="Http\ContentType.cs" />
+    <Compile Include="Http\ETag.cs" />
+    <Compile Include="Http\HeaderQuery.cs" />
+    <Compile Include="Http\IChunkingStrategy.cs" />
+    <Compile Include="Http\ICondition.cs" />
+    <Compile Include="Http\IfNoneMatch.cs" />
+    <Compile Include="Http\IHeader.cs" />
+    <Compile Include="Http\IRequestWrapper.cs" />
+    <Compile Include="Http\IResponse.cs" />
+    <Compile Include="Http\IResponseContext.cs" />
+    <Compile Include="Http\IResponseWrapper.cs" />
+    <Compile Include="Http\LastModified.cs" />
+    <Compile Include="Http\NullCondition.cs" />
+    <Compile Include="Http\Response.cs" />
+    <Compile Include="Http\ResponseContext.cs" />
+    <Compile Include="Http\SendChunked.cs" />
+    <Compile Include="Http\StatusCode.cs" />
+    <Compile Include="Model\ArchiveFeed.cs" />
+    <Compile Include="Model\CopyEntityBody.cs" />
+    <Compile Include="Model\FeedMappings.cs" />
+    <Compile Include="Model\FeedOfRecentEvents.cs" />
+    <Compile Include="Model\GetFeedCommand.cs" />
+    <Compile Include="Model\GetFeedOfRecentEventsCommand.cs" />
+    <Compile Include="Model\HeadersOnlyRepresentation.cs" />
+    <Compile Include="Model\IAcceptResourceIdParameters.cs" />
+    <Compile Include="Model\IEntityBodyTransformationStrategy.cs" />
+    <Compile Include="Model\IFeedMappings.cs" />
+    <Compile Include="Model\IRepository.cs" />
+    <Compile Include="Model\IRepresentation.cs" />
+    <Compile Include="Model\NullRepresentation.cs" />
+    <Compile Include="Model\Repository.cs" />
+    <Compile Include="Model\ResourceId.cs" />
+    <Compile Include="Model\ResourceIdParameters.cs" />
+    <Compile Include="Model\ResourceIdToStoreIdConverter.cs" />
+    <Compile Include="Model\RewriteEntityBody.cs" />
+    <Compile Include="Model\WorkingFeed.cs" />
+    <Compile Include="Net\HttpListenerRequestWrapper.cs" />
+    <Compile Include="Net\HttpListenerResponseWrapper.cs" />
+    <Compile Include="NotificationsService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Persistence\FileBasedAtomDocument.cs" />
+    <Compile Include="Persistence\FileStore.cs" />
+    <Compile Include="Persistence\IStore.cs" />
+    <Compile Include="Persistence\IStoreId.cs" />
+    <Compile Include="Persistence\NotFoundException.cs" />
+    <Compile Include="Persistence\StoreId.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service\InvalidUriException.cs" />
+    <Compile Include="Service\IRepositoryCommand.cs" />
+    <Compile Include="Service\NullFeedMappings.cs" />
+    <Compile Include="Service\Routes.cs" />
+    <Compile Include="Service\ServerException.cs" />
+    <Compile Include="Service\ServiceHost.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ProductCatalog.Shared\ProductCatalog.Shared.csproj">
+      <Project>{C502815C-5419-42FE-9A45-625370057CC8}</Project>
+      <Name>ProductCatalog.Shared</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

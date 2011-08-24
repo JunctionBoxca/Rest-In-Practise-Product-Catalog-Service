@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title type="text">Restbucks products and promotions</title>
+  <id>urn:uuid:34e6b37a-cb1d-49a0-a812-376bb53a0179</id>
+  <updated>2009-08-25T10:42:32+01:00</updated>
+  <author>
+    <name>Product Catalog</name>
+  </author>
+  <generator>Product Catalog</generator>
+  <link rel="self" href="http://restbucks.com/product-catalog/notifications/recent" />
+  <link rel="via" href="http://restbucks.com/product-catalog/notifications/?page=8" />
+  <link rel="prev-archive" href="http://restbucks.com/product-catalog/notifications/?page=7" />
+  <entry>
+    <id>tag:restbucks.com,2009-08-25:38</id>
+    <title type="text">event: 39</title>
+    <updated>2009-08-25T10:42:31+01:00</updated>
+    <link rel="related" href="http://product/39" />
+    <link rel="self" href="http://restbucks.com/product-catalog/notifications/notification/38" />
+    <content type="text/plain">
+      <string xmlns="http://schemas.microsoft.com/2003/10/Serialization/">39</string>
+    </content>
+  </entry>
+  <entry>
+    <id>tag:restbucks.com,2009-08-25:37</id>
+    <title type="text">event: 38</title>
+    <updated>2009-08-25T10:42:29+01:00</updated>
+    <link rel="related" href="http://product/38" />
+    <link rel="self" href="http://restbucks.com/product-catalog/notifications/notification/37" />
+    <content type="text/plain">
+      <string xmlns="http://schemas.microsoft.com/2003/10/Serialization/">38</string>
+    </content>
+  </entry>
+  <entry>
+    <id>tag:restbucks.com,2009-08-25:36</id>
+    <title type="text">event: 37</title>
+    <updated>2009-08-25T10:42:27+01:00</updated>
+    <link rel="related" href="http://product/37" />
+    <link rel="self" href="http://restbucks.com/product-catalog/notifications/notification/36" />
+    <content type="text/plain">
+      <string xmlns="http://schemas.microsoft.com/2003/10/Serialization/">37</string>
+    </content>
+  </entry>
+  <entry>
+    <id>tag:restbucks.com,2009-08-25:35</id>
+    <title type="text">event: 36</title>
+    <updated>2009-08-25T10:42:25+01:00</updated>
+    <link rel="related" href="http://product/36" />
+    <link rel="self" href="http://restbucks.com/product-catalog/notifications/notification/35" />
+    <content type="text/plain">
+      <string xmlns="http://schemas.microsoft.com/2003/10/Serialization/">36</string>
+    </content>
+  </entry>
+</feed>

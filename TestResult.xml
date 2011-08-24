@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="c:/Documents and Settings/Administrator/My Documents/Downloads/Chapter07-DotNetProductCatalogService/ProductCatalogService/src/ProductCatalog.Tests/bin/Debug/ProductCatalog.Tests.dll" total="157" errors="0" failures="0" not-run="0" ignored="0" skipped="0" invalid="0" date="2011-08-24" time="07:44:33">
+  <environment nunit-version="2.5.0.9122" clr-version="2.0.50727.3623" os-version="Microsoft Windows NT 5.1.2600 Service Pack 3" platform="Win32NT" cwd="c:\Documents and Settings\Administrator\My Documents\Downloads\Chapter07-DotNetProductCatalogService\ProductCatalogService" machine-name="NATHAN-573ECC14" user="Administrator" user-domain="NATHAN-573ECC14" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite name="c:/Documents and Settings/Administrator/My Documents/Downloads/Chapter07-DotNetProductCatalogService/ProductCatalogService/src/ProductCatalog.Tests/bin/Debug/ProductCatalog.Tests.dll" executed="True" success="True" time="3.047" asserts="0">
+    <results>
+      <test-suite name="ProductCatalog" executed="True" success="True" time="3.047" asserts="0">
+        <results>
+          <test-suite name="Tests" executed="True" success="True" time="3.047" asserts="0">
+            <results>
+              <test-suite name="Notifications" executed="True" success="True" time="1.563" asserts="0">
+                <results>
+                  <test-suite name="Http" executed="True" success="True" time="0.063" asserts="0">
+                    <results>
+                      <test-suite name="CacheControlTests" executed="True" success="True" time="0.016" asserts="0">
+                        <results>
+                          <test-case name="ProductCatalog.Tests.Notifications.Http.CacheControlTests.LongCachingPolicyShouldSetLongMaxAgeCacheControlHeader" executed="True" success="True" time="0.016" asserts="1" />
+                          <test-case name="ProductCatalog.Tests.Notifications.Http.CacheControlTests.ShortCachingPolicyShouldSetShortMaxAgeCacheControlHeader" executed="True" success="True" time="0.000" asserts="1" />
+                        </results>
+                      </test-suite>
+                      <test-suite name="ContentTypeTests" executed="True" success="True" time="0.000" asserts="0">
+                        <results>
+                          <test-case name="ProductCatalog.Tests.Notifications.Http.ContentTypeTests.AtomFeedShouldAddAtomContentTypeHeaderWithFeedTypeParameter" executed="True" success="True" time="0.000" asserts="1" />
+                        </results>
+                      </test-suite>
+                      <test-suite name="ETagTests" executed="True" success="True" time="0.000" asserts="0">
+                        <results>
+                          <test-case name="ProductCatalog.Tests.Notifications.Http.ETagTests.ShouldExhibitValueTypeEquality" executed="True" success="True" time="0.000" asserts="10" />
+                          <test-case name="ProductCatalog.Tests.Notifications.Http.ETagTests.ShouldWriteETagValueToHeader" executed="True" success="True" time="0.000" asserts="1" />
+                        </results>
+                      </test-suite>
+                      <test-suite name="HeaderQueryTests" executed="True" success="True" time="0.000" asserts="0">
+                        <results>
+                          <test-case name="ProductCatalog.Tests.Notifications.Http.HeaderQueryTests.ShouldMatchHeaderInNestedRepresentation" executed="True" success="True" time="0.000" asserts="1" />
+                          <test-case name="ProductCatalog.Tests.Notifications.Http.HeaderQueryTests.WhenRepresentationContainsSpecifiedHeaderShouldReturnTrue" executed="True" success="True" time="0.000" asserts="1" />
+                          <test-case name="ProductCatalog.Tests.Notifications.Http.HeaderQueryTests.WhenRepresentationDoesNotContainSpecifiedHeaderShouldReturnFalse" executed="True" success="True" time="0.000" asserts="1" />
+                        </results>
+                      </test-suite>
+                      <test-suite name="IfNoneMatchTests" executed="True" success="True" time="0.016" asserts="0">
+                        <results>
+                          <test-case name="ProductCatalog.Tests.Notifications.Http.IfNoneMatchTests.IfETagDoesNotMatchShouldReturnOK" executed="True" success="True" time="0.016" asserts="3" />
+                          <test-case name="ProductCatalog.Tests.Notifications.Http.IfNoneMatchTests.IfETagMatchesShouldReturnNotModified" executed="True" success="True" time="0.000" asserts="3" />
+                        </results>
+                      </test-suite>
+                      <test-suite name="NullConditionTests" executed="True" success="True" time="0.000" asserts="0">
+                        <results>
+                          <test-case name="ProductCatalog.Tests.Notifications.Http.NullConditionTests.ShouldAlwaysReturnOK" executed="True" success="True" time="0.000" asserts="2" />
+                        </results>
+                      </test-suite>
+                      <test-suite name="ResponseContextTests" executed="True" success="True" time="0.000" asserts="0">
+                        <results>
+                          <test-case name="ProductCatalog.Tests.Notifications.Http.ResponseContextTests.IfSuppliedHeaderMatchesContainedHeaderShouldReturnTrue" executed="True" success="True" time="0.000" asserts="4" />
+                        </results>
+                      </test-suite>
+                      <test-suite name="SendChunkedTests" executed="True" success="True" time="0.016" asserts="0">
+                        <results>
+                          <test-case name="ProductCatalog.Tests.Notifications.Http.SendChunkedTests.WhenChunkingIsNotRequiredShouldWriteContentLengthToResponseButShouldSetIsChunkedToFalse" executed="True" success="True" time="0.000" asserts="2" />
+                          <test-case name="ProductCatalog.Tests.Notifications.Http.SendChunkedTests.WhenChunkingIsRequiredShouldNotWriteContentLengthButShouldSetIsChunkedToTrue" executed="True" success="True" time="0.000" asserts="2" />
+                          <test-case name="ProductCatalog.Tests.Notifications.Http.SendChunkedTests.WhenWritingToResponseWhenChunkingIsNotRequiredShouldThrowException" executed="True" success="True" time="0.016" asserts="0" />
+                        </results>
+                      </test-suite>
+                    </results>
+                  </test-suite>
+                  <test-suite name="Model" executed="True" success="True" time="0.813" asserts="0">
+                    <results>
+                      <test-suite name="ArchiveFeedTests" executed="True" success="True" time="0.000" asserts="0">
+                        <results>
+                          <test-case name="ProductCatalog.Tests.Notifications.Model.ArchiveFeedTests.ShouldAddLongCachingPolicyCacheControlHeader" executed="True" success="True" time="0.000" asserts="1" />
+                          <test-case name="ProductCatalog.Tests.Notifications.Model.ArchiveFeedTests.ShouldNotTransformEntityBody" executed="True" success="True" time="0.000" asserts="1" />
+                        </results>
+                      </test-suite>
+                      <test-suite name="CopyEntityBodyTests" executed="True" success="True" time="0.000" asserts="0">
+                        <results>
+                          <test-case name="ProductCatalog.Tests.Notifications.Model.CopyEntityBodyTests.ShouldCloseSourceStream" executed="True" success="True" time="0.000" asserts="0" />
+                          <test-case name="ProductCatalog.Tests.Notifications.Model.CopyEntityBodyTests.ShouldCopyEntityBodyWithoutTransformingContents" executed="True" success="True" time="0.000" asserts="3" />
+                          <test-case name="ProductCatalog.Tests.Notifications.Model.CopyEntityBodyTests.ShouldNotCloseDestinationStream" executed="True" success="True" time="0.000" asserts="1" />
+                        </results>
+                      </test-suite>
+                      <test-suite name="FeedMappingsTests" executed="True" success="True" time="0.734" asserts="0">
+                        <results>
+                          <test-case name="ProductCatalog.Tests.Notifications.Model.FeedMappingsTests.ShouldReturnAccessorForFeedOfRecentEvents" executed="True" success="True" time="0.328" asserts="2" />
+                          <test-case name="ProductCatalog.Tests.Notifications.Model.FeedMappingsTests.WhenPresentedWithResouceIdForCurrentFeedReturnsAccessorThatGetsCurrentFeedFromStore" executed="True" success="True" time="0.313" asserts="3" />
+                          <test-case name="ProductCatalog.Tests.Notifications.Model.FeedMappingsTests.WhenPresentedWithResouceIdForNonCurrentFeedReturnsAccessorThatGetsArchiveFeedFromStore" executed="True" success="True" time="0.000" asserts="2" />
+                        </results>
+                      </test-suite>
+                      <test-suite name="FeedOfRecentEventsTests" executed="True" success="True" time="0.000" asserts="0">
+                        <results>
+                          <test-case name="ProductCatalog.Tests.Notifications.Model.FeedOfRecentEventsTests.ShouldAddShortCachingPolicyCacheControlHeader" executed="True" success="True" time="0.000" asserts="1" />
+                          <test-case name="ProductCatalog.Tests.Notifications.Model.FeedOfRecentEventsTests.ShouldNotTransformEntityBody" executed="True" success="True" time="0.000" asserts="1" />
+                        </results>
+                      </test-suite>
+                      <test-suite name="HeadersOnlyRepresentationTests" executed="True" success="True" time="0.016" asserts="0">
+                        <results>
+                          <test-case name="ProductCatalog.Tests.Notifications.Model.HeadersOnlyRepresentationTests.AddsHeadersToResponse" executed="True" success="True" time="0.000" asserts="2" />
+                          <test-case name="ProductCatalog.Tests.Notifications.Model.HeadersOnlyRepresentationTests.CallsInnerRepresentation" executed="True" success="True" time="0.000" asserts="2" />
+                        </results>
+                      </test-suite>
+                      <test-suite name="NullRepresentationTests" executed="True" success="True" time="0.000" asserts="0">
+                        <results>
+                          <test-case name="ProductCatalog.Tests.Notifications.Model.NullRepresentationTests.ShouldNotAddAnythingToResponse" executed="True" success="True" time="0.000" asserts="9" />
+                        </results>
+                      </test-suite>
+                      <test-suite name="RepositoryTests" executed="True" success="True" time="0.016" asserts="0">
+                        <results>
+                          <test-case name="ProductCatalog.Tests.Notifications.Model.RepositoryTests.IfConverterIsNullShouldThrowException" executed="True" success="True" time="0.000" asserts="0" />
+                          <test-case name="ProductCatalog.Tests.Notifications.Model.RepositoryTests.IfStoreIsNullShouldThrowException" executed="True" success="True" time="0.000" asserts="0" />
+                          <test-case name="ProductCatalog.Tests.Notifications.Model.RepositoryTests.ShouldGetAllOtherFeeds" executed="True" success="True" time="0.016" asserts="1" />
+                          <test-case name="ProductCatalog.Tests.Notifications.Model.RepositoryTests.ShouldGetFeedOfRecentEvents" executed="True" success="True" time="0.000" asserts="1" />
+                        </results>
+                      </test-suite>
+                      <test-suite name="ResourceIdTests" executed="True" success="True" time="0.000" asserts="0">
+                        <results>
+                          <test-case name="ProductCatalog.Tests.Notifications.Model.ResourceIdTests.ComplexValue" executed="True" success="True" time="0.000" asserts="0" />
+                          <test-case name="ProductCatalog.Tests.Notifications.Model.ResourceIdTests.ShouldExhibitValueTypeEquality" executed="True" success="True" time="0.000" asserts="9" />
+                        </results>
+                      </test-suite>
+                      <test-suite name="ResourceIdToStoreIdConverterTests" executed="True" success="True" time="0.000" asserts="0">
+                        <results>
+                          <test-case name="ProductCatalog.Tests.Notifications.Model.ResourceIdToStoreIdConverterTests.IfFunctionIsNullShouldThrowException" executed="True" success="True" time="0.000" asserts="0" />
+                          <test-case name="ProductCatalog.Tests.Notifications.Model.ResourceIdToStoreIdConverterTests.WhenGivenResourceIdShouldConvertToStoreId" executed="True" success="True" time="0.000" asserts="1" />
+                        </results>
+                      </test-suite>
+                      <test-suite name="RewriteEntityBodyTests" executed="True" success="True" time="0.016" asserts="0">
+                        <results>
+                          <test-case name="ProductCatalog.Tests.Notifications.Model.RewriteEntityBodyTests.ShouldCloseSourceStream" executed="True" success="True" time="0.000" asserts="0" />
+                          <test-case name="ProductCatalog.Tests.Notifications.Model.RewriteEntityBodyTests.ShouldNotCloseDestinationStream" executed="True" success="True" time="0.000" asserts="1" />
+                          <test-case name="ProductCatalog.Tests.Notifications.Model.RewriteEntityBodyTests.ShouldRemoveViaLink" executed="True" success="True" time="0.000" asserts="1" />
+                          <test-case name="ProductCatalog.Tests.Notifications.Model.RewriteEntityBodyTests.ShouldSetSelfLinkHrefValueToHrefValueOfViaLink" executed="True" success="True" time="0.016" asserts="3" />
+                        </results>
+                      </test-suite>
+                      <test-suite name="WorkingFeedTests" executed="True" success="True" time="0.016" asserts="0">
+                        <results>
+                          <test-case name="ProductCatalog.Tests.Notifications.Model.WorkingFeedTests.ShouldAddShortCachingPolicyCacheControlHeader" executed="True" success="True" time="0.016" asserts="1" />
+                          <test-case name="ProductCatalog.Tests.Notifications.Model.WorkingFeedTests.ShouldTransformLinksInEntityBody" executed="True" success="True" time="0.000" asserts="2" />
+                        </results>
+                      </test-suite>
+                    </results>
+                  </test-suite>
+                  <test-suite name="Net" executed="True" success="True" time="0.438" asserts="0">
+                    <results>
+                      <test-suite name="HttpListenerRequestWrapperTests" executed="True" success="True" time="0.297" asserts="0">
+                        <results>
+                          <test-case name="ProductCatalog.Tests.Notifications.Net.HttpListenerRequestWrapperTests.IfETagIsEmptyShouldReturnNullCondition" executed="True" success="True" time="0.266" asserts="2" />
+                          <test-case name="ProductCatalog.Tests.Notifications.Net.HttpListenerRequestWrapperTests.IfETagIsNotEmptyShouldReturnIfNoneMatchCondition" executed="True" success="True" time="0.031" asserts="4" />
+                          <test-case name="ProductCatalog.Tests.Notifications.Net.HttpListenerRequestWrapperTests.ShouldReturnRequestUri" executed="True" success="True" time="0.000" asserts="2" />
+                        </results>
+                      </test-suite>
+                      <test-suite name="HttpListenerResponseWrapperTests" executed="True" success="True" time="0.141" asserts="0">
+                        <results>
+                          <test-case name="ProductCatalog.Tests.Notifications.Net.HttpListenerResponseWrapperTests.ShouldNotSetContentLengthHeaderWhenChunked" executed="True" success="True" time="0.031" asserts="1" />
+                          <test-case name="ProductCatalog.Tests.Notifications.Net.HttpListenerResponseWrapperTests.ShouldSetCacheControlHeader" executed="True" success="True" time="0.016" asserts="1" />
+                          <test-case name="ProductCatalog.Tests.Notifications.Net.HttpListenerResponseWrapperTests.ShouldSetContentLengthHeader" executed="True" success="True" time="0.016" asserts="1" />
+                          <test-case name="ProductCatalog.Tests.Notifications.Net.HttpListenerResponseWrapperTests.ShouldSetContentTypeHeader" executed="True" success="True" time="0.016" asserts="1" />
+                          <test-case name="ProductCatalog.Tests.Notifications.Net.HttpListenerResponseWrapperTests.ShouldSetETagHeader" executed="True" success="True" time="0.016" asserts="1" />
+                          <test-case name="ProductCatalog.Tests.Notifications.Net.HttpListenerResponseWrapperTests.ShouldSetStatusCodeAndDescription" executed="True" success="True" time="0.000" asserts="2" />
+                          <test-case name="ProductCatalog.Tests.Notifications.Net.HttpListenerResponseWrapperTests.ShouldSetTransferEncodingHeader" executed="True" success="True" time="0.016" asserts="1" />
+                          <test-case name="ProductCatalog.Tests.Notifications.Net.HttpListenerResponseWrapperTests.ShouldWriteEntityBody" executed="True" success="True" time="0.016" asserts="1" />
+                          <test-case name="ProductCatalog.Tests.Notifications.Net.HttpListenerResponseWrapperTests.ShouldWriteLastModifiedHeader" executed="True" success="True" time="0.016" asserts="1" />
+                        </results>
+                      </test-suite>
+                    </results>
+                  </test-suite>
+                  <test-suite name="NotificationsServiceTests" executed="True" success="True" time="0.156" asserts="0">
+                    <results>
+                      <test-case name="ProductCatalog.Tests.Notifications.NotificationsServiceTests.IfRepositoryIsNullThrowsException" executed="True" success="True" time="0.016" asserts="0" />
+                      <test-case name="ProductCatalog.Tests.Notifications.NotificationsServiceTests.IfRoutesIsNullThrowsException" executed="True" success="True" time="0.016" asserts="0" />
+                      <test-case name="ProductCatalog.Tests.Notifications.NotificationsServiceTests.WhenFeedDoesNotExistShouldReturnNotFound" executed="True" success="True" time="0.078" asserts="2" />
+                      <test-case name="ProductCatalog.Tests.Notifications.NotificationsServiceTests.WhenRequestIsForAnyOtherFeedShouldReturnCorrespondingFeed" executed="True" success="True" time="0.000" asserts="3" />
+                      <test-case name="ProductCatalog.Tests.Notifications.NotificationsServiceTests.WhenRequestIsForRecentFeedShouldReturnCurrentFeed" executed="True" success="True" time="0.000" asserts="3" />
+                      <test-case name="ProductCatalog.Tests.Notifications.NotificationsServiceTests.WhenServerEncountersErrorShouldReturnInternalServerError" executed="True" success="True" time="0.016" asserts="2" />
+                      <test-case name="ProductCatalog.Tests.Notifications.NotificationsServiceTests.WhenUriIsNotRecognizedShouldReturnNotFound" executed="True" success="True" time="0.000" asserts="2" />
+                    </results>
+                  </test-suite>
+                  <test-suite name="Persistence" executed="True" success="True" time="0.078" asserts="0">
+                    <results>
+                      <test-suite name="FileBasedAtomDocumentTests" executed="True" success="True" time="0.016" asserts="0">
+                        <results>
+                          <test-case name="ProductCatalog.Tests.Notifications.Persistence.FileBasedAtomDocumentTests.IfFileDoesNotExistThrowsException" executed="True" success="True" time="0.000" asserts="0" />
+                          <test-case name="ProductCatalog.Tests.Notifications.Persistence.FileBasedAtomDocumentTests.ShouldWriteAtomContentTypeHeaderToResponse" executed="True" success="True" time="0.016" asserts="1" />
+                          <test-case name="ProductCatalog.Tests.Notifications.Persistence.FileBasedAtomDocumentTests.ShouldWriteETagHeaderToResponse" executed="True" success="True" time="0.000" asserts="1" />
+                          <test-case name="ProductCatalog.Tests.Notifications.Persistence.FileBasedAtomDocumentTests.ShouldWriteLastUpdatedDateTimeToResponse" executed="True" success="True" time="0.000" asserts="1" />
+                          <test-case name="ProductCatalog.Tests.Notifications.Persistence.FileBasedAtomDocumentTests.WhenSendChunkedIsFalseShouldWriteLengthHeaderToResponse" executed="True" success="True" time="0.000" asserts="2" />
+                          <test-case name="ProductCatalog.Tests.Notifications.Persistence.FileBasedAtomDocumentTests.WhenSendChunkedIsTrueShouldNotWriteLengthHeaderToResponse" executed="True" success="True" time="0.000" asserts="2" />
+                        </results>
+                      </test-suite>
+                      <test-suite name="FileStoreTests" executed="True" success="True" time="0.063" asserts="0">
+                        <results>
+                          <test-case name="ProductCatalog.Tests.Notifications.Persistence.FileStoreTests.IfFileSystemConfigurationIsNullShouldThrowException" executed="True" success="True" time="0.000" asserts="0" />
+                          <test-case name="ProductCatalog.Tests.Notifications.Persistence.FileStoreTests.ShouldRetrieveArchiveFeedBasedOnStoreId" executed="True" success="True" time="0.047" asserts="1" />
+                          <test-case name="ProductCatalog.Tests.Notifications.Persistence.FileStoreTests.ShouldRetrieveCurrentFeedBasedOnStoreId" executed="True" success="True" time="0.016" asserts="1" />
+                        </results>
+                      </test-suite>
+                      <test-suite name="StoreIdTests" executed="True" success="True" time="0.000" asserts="0">
+                        <results>
+                          <test-case name="ProductCatalog.Tests.Notifications.Persistence.StoreIdTests.ShouldExhibitValueTypeEquality" executed="True" success="True" time="0.000" asserts="9" />
+                        </results>
+                      </test-suite>
+                    </results>
+                  </test-suite>
+                  <test-suite name="Service" executed="True" success="True" time="0.016" asserts="0">
+                    <results>
+                      <test-suite name="NullFeedMappingsTests" executed="True" success="True" time="0.000" asserts="0">
+                        <results>
+                          <test-case name="ProductCatalog.Tests.Notifications.Service.NullFeedMappingsTests.CreateStoreAccessorForCurrentFeedThrowsException" executed="True" success="True" time="0.000" asserts="0" />
+                          <test-case name="ProductCatalog.Tests.Notifications.Service.NullFeedMappingsTests.CreateStoreAccessorThrowsException" executed="True" success="True" time="0.000" asserts="0" />
+                        </results>
+                      </test-suite>
+                      <test-suite name="RoutesTests" executed="True" success="True" time="0.016" asserts="0">
+                        <results>
+                          <test-case name="ProductCatalog.Tests.Notifications.Service.RoutesTests.IfUriIsNotRecognizedThrowsException" executed="True" success="True" time="0.000" asserts="0" />
+                          <test-case name="ProductCatalog.Tests.Notifications.Service.RoutesTests.ShouldThrowExceptionIfUriConfigurationIsNull" executed="True" success="True" time="0.000" asserts="0" />
+                          <test-case name="ProductCatalog.Tests.Notifications.Service.RoutesTests.WhenRequestIsForAnotherFeedShouldReturnCommandThatGetsAnotherFeed" executed="True" success="True" time="0.000" asserts="1" />
+                          <test-case name="ProductCatalog.Tests.Notifications.Service.RoutesTests.WhenRequestIsForFeedOfRecentEventsShouldReturnCommandThatGetsCurrentFeed" executed="True" success="True" time="0.000" asserts="1" />
+                        </results>
+                      </test-suite>
+                      <test-suite name="ServiceHostTests" executed="True" success="True" time="0.000" asserts="0">
+                        <results>
+                          <test-case name="ProductCatalog.Tests.Notifications.Service.ServiceHostTests.IfServiceIsNullShouldThrowException" executed="True" success="True" time="0.000" asserts="0" />
+                        </results>
+                      </test-suite>
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+              <test-suite name="Writer" executed="True" success="True" time="1.453" asserts="0">
+                <results>
+                  <test-suite name="Feeds" executed="True" success="True" time="1.328" asserts="0">
+                    <results>
+                      <test-suite name="ArchiveFeedTests" executed="True" success="True" time="0.188" asserts="0">
+                        <results>
+                          <test-case name="ProductCatalog.Tests.Writer.Feeds.ArchiveFeedTests.ShouldSaveFeedToArchiveDirectory" executed="True" success="True" time="0.188" asserts="7" />
+                        </results>
+                      </test-suite>
+                      <test-suite name="EntryTests" executed="True" success="True" time="0.016" asserts="0">
+                        <results>
+                          <test-case name="ProductCatalog.Tests.Writer.Feeds.EntryTests.ShouldAddSelfToTopOfFeed" executed="True" success="True" time="0.000" asserts="3" />
+                          <test-case name="ProductCatalog.Tests.Writer.Feeds.EntryTests.ShouldSaveEntryToEntryDirectory" executed="True" success="True" time="0.016" asserts="3" />
+                        </results>
+                      </test-suite>
+                      <test-suite name="FeedBuilderTests" executed="True" success="True" time="0.016" asserts="0">
+                        <results>
+                          <test-case name="ProductCatalog.Tests.Writer.Feeds.FeedBuilderTests.GivenAnEventShouldCreateEntryRepresentingThatEvent" executed="True" success="True" time="0.000" asserts="6" />
+                          <test-case name="ProductCatalog.Tests.Writer.Feeds.FeedBuilderTests.ShouldBeAbleToLoadFeedFromCurrentDirectory" executed="True" success="True" time="0.016" asserts="2" />
+                        </results>
+                      </test-suite>
+                      <test-suite name="FeedMappingTests" executed="True" success="True" time="0.031" asserts="0">
+                        <results>
+                          <test-case name="ProductCatalog.Tests.Writer.Feeds.FeedMappingTests.NewFeedMappingShouldHaveTempFileName" executed="True" success="True" time="0.031" asserts="2" />
+                          <test-case name="ProductCatalog.Tests.Writer.Feeds.FeedMappingTests.WithNextIdShouldReturnMappingWithNextIdAndNewFileName" executed="True" success="True" time="0.000" asserts="2" />
+                          <test-case name="ProductCatalog.Tests.Writer.Feeds.FeedMappingTests.WithPermanentFileNameShouldReturnMappingWithFileNameDerivedFromId" executed="True" success="True" time="0.000" asserts="3" />
+                        </results>
+                      </test-suite>
+                      <test-suite name="IdTests" executed="True" success="True" time="0.016" asserts="0">
+                        <results>
+                          <test-case name="ProductCatalog.Tests.Writer.Feeds.IdTests.ShouldBeAbleToCloneSelf" executed="True" success="True" time="0.000" asserts="2" />
+                          <test-case name="ProductCatalog.Tests.Writer.Feeds.IdTests.ShouldBeAbleToReturnFileNameDerivedFromValue" executed="True" success="True" time="0.000" asserts="1" />
+                          <test-case name="ProductCatalog.Tests.Writer.Feeds.IdTests.ShouldBeAbleToReturnUriDerivedFromValue" executed="True" success="True" time="0.000" asserts="1" />
+                          <test-case name="ProductCatalog.Tests.Writer.Feeds.IdTests.ShouldExhibitValueTypeEquality" executed="True" success="True" time="0.000" asserts="9" />
+                          <test-case name="ProductCatalog.Tests.Writer.Feeds.IdTests.ToStringShouldReturnStringValueOfId" executed="True" success="True" time="0.000" asserts="1" />
+                        </results>
+                      </test-suite>
+                      <test-suite name="LinksTests" executed="True" success="True" time="0.016" asserts="0">
+                        <results>
+                          <test-case name="ProductCatalog.Tests.Writer.Feeds.LinksTests.ShouldBeAbleToCreateEntrySelfLink" executed="True" success="True" time="0.000" asserts="2" />
+                          <test-case name="ProductCatalog.Tests.Writer.Feeds.LinksTests.ShouldBeAbleToCreateNextArchiveLink" executed="True" success="True" time="0.000" asserts="2" />
+                          <test-case name="ProductCatalog.Tests.Writer.Feeds.LinksTests.ShouldBeAbleToCreatePrevArchiveLink" executed="True" success="True" time="0.000" asserts="2" />
+                          <test-case name="ProductCatalog.Tests.Writer.Feeds.LinksTests.ShouldBeAbleToCreateRecentFeedSelfLink" executed="True" success="True" time="0.000" asserts="2" />
+                          <test-case name="ProductCatalog.Tests.Writer.Feeds.LinksTests.ShouldBeAbleToCreateViaLink" executed="True" success="True" time="0.000" asserts="2" />
+                          <test-case name="ProductCatalog.Tests.Writer.Feeds.LinksTests.ShouldBeAbleToParseResourceIdFromUri" executed="True" success="True" time="0.000" asserts="1" />
+                        </results>
+                      </test-suite>
+                      <test-suite name="PrevArchiveLinkGeneratorTests" executed="True" success="True" time="0.000" asserts="0">
+                        <results>
+                          <test-case name="ProductCatalog.Tests.Writer.Feeds.PrevArchiveLinkGeneratorTests.CanAddPrevArchiveLinkToFeed" executed="True" success="True" time="0.000" asserts="1" />
+                          <test-case name="ProductCatalog.Tests.Writer.Feeds.PrevArchiveLinkGeneratorTests.NullGeneratorDoesNotAddPrevArchiveLinkToFeed" executed="True" success="True" time="0.000" asserts="1" />
+                        </results>
+                      </test-suite>
+                      <test-suite name="RecentEventsFeedTests" executed="True" success="True" time="1.031" asserts="0">
+                        <results>
+                          <test-case name="ProductCatalog.Tests.Writer.Feeds.RecentEventsFeedTests.IfThereIsNoPreviousFeedTheFeedShouldNotIncludeAPreviousArchiveLink" executed="True" success="True" time="0.000" asserts="1" />
+                          <test-case name="ProductCatalog.Tests.Writer.Feeds.RecentEventsFeedTests.ShouldCreateSyndicationFeed" executed="True" success="True" time="0.000" asserts="8" />
+                          <test-case name="ProductCatalog.Tests.Writer.Feeds.RecentEventsFeedTests.ShouldSaveFeedToCurrentDirectory" executed="True" success="True" time="0.000" asserts="7" />
+                          <test-case name="ProductCatalog.Tests.Writer.Feeds.RecentEventsFeedTests.WhenAnEntryIsAddedToTheFeedTheUpdatedElementOnTheFeedShouldBeUpdated" executed="True" success="True" time="1.000" asserts="1" />
+                          <test-case name="ProductCatalog.Tests.Writer.Feeds.RecentEventsFeedTests.WhenArchivingShouldAddANextArchiveLink" executed="True" success="True" time="0.000" asserts="1" />
+                          <test-case name="ProductCatalog.Tests.Writer.Feeds.RecentEventsFeedTests.WhenArchivingShouldAddArchiveSimpleExtensionElement" executed="True" success="True" time="0.016" asserts="1" />
+                          <test-case name="ProductCatalog.Tests.Writer.Feeds.RecentEventsFeedTests.WhenArchivingShouldRemoveViaLink" executed="True" success="True" time="0.000" asserts="1" />
+                          <test-case name="ProductCatalog.Tests.Writer.Feeds.RecentEventsFeedTests.WhenArchivingShouldSetSelfLinkToValueOfFormerViaLink" executed="True" success="True" time="0.000" asserts="1" />
+                        </results>
+                      </test-suite>
+                    </results>
+                  </test-suite>
+                  <test-suite name="FeedWriterTests" executed="True" success="True" time="0.047" asserts="0">
+                    <results>
+                      <test-case name="ProductCatalog.Tests.Writer.FeedWriterTests.IfEventBufferIsNullShouldThrowException" executed="True" success="True" time="0.000" asserts="0" />
+                      <test-case name="ProductCatalog.Tests.Writer.FeedWriterTests.IfFeedBuilderIsNullShouldThrowException" executed="True" success="True" time="0.000" asserts="0" />
+                      <test-case name="ProductCatalog.Tests.Writer.FeedWriterTests.IfFeedFillsExactlyToQuotaShouldNotBeArchived" executed="True" success="True" time="0.016" asserts="3" />
+                      <test-case name="ProductCatalog.Tests.Writer.FeedWriterTests.IfFileSystemIsNullShouldThrowException" executed="True" success="True" time="0.000" asserts="0" />
+                      <test-case name="ProductCatalog.Tests.Writer.FeedWriterTests.IfTimerIsNullShouldThrowException" executed="True" success="True" time="0.000" asserts="0" />
+                      <test-case name="ProductCatalog.Tests.Writer.FeedWriterTests.ShouldRaiseEventEachTimeATempFileIsSavedToCurrentDirectory" executed="True" success="True" time="0.016" asserts="6" />
+                      <test-case name="ProductCatalog.Tests.Writer.FeedWriterTests.WhenNumberOfEventsExceedsQuotaShouldArchiveFeedAndBeginAnotherOne" executed="True" success="True" time="0.000" asserts="7" />
+                      <test-case name="ProductCatalog.Tests.Writer.FeedWriterTests.WhenThereAreNoOutstandingEventsShouldNotWriteFeedOrRaiseEvent" executed="True" success="True" time="0.000" asserts="2" />
+                      <test-case name="ProductCatalog.Tests.Writer.FeedWriterTests.WhenThereAreNoOutstandingEventsShouldRetainTheCurrentTempFileName" executed="True" success="True" time="0.000" asserts="1" />
+                      <test-case name="ProductCatalog.Tests.Writer.FeedWriterTests.WhenTriggeredRepeatedlyShouldContinueToAddEventsToExistingFeed" executed="True" success="True" time="0.000" asserts="4" />
+                      <test-case name="ProductCatalog.Tests.Writer.FeedWriterTests.WhenTriggeredShouldAddBatchOfEventsToCurrentFeed" executed="True" success="True" time="0.016" asserts="2" />
+                    </results>
+                  </test-suite>
+                  <test-suite name="Model" executed="True" success="True" time="0.000" asserts="0">
+                    <results>
+                      <test-suite name="EventBufferTests" executed="True" success="True" time="0.000" asserts="0">
+                        <results>
+                          <test-case name="ProductCatalog.Tests.Writer.Model.EventBufferTests.CanAddAndTakeEvent" executed="True" success="True" time="0.000" asserts="2" />
+                          <test-case name="ProductCatalog.Tests.Writer.Model.EventBufferTests.IfThereAreNoEventsInBufferShouldReturnZeroEvents" executed="True" success="True" time="0.000" asserts="1" />
+                          <test-case name="ProductCatalog.Tests.Writer.Model.EventBufferTests.WhenNumberOfEventsInBufferExceedsBatchSizeShouldReturnBatchfulOfEvents" executed="True" success="True" time="0.000" asserts="1" />
+                          <test-case name="ProductCatalog.Tests.Writer.Model.EventBufferTests.WhenNumberOfEventsInBufferIsLessThanBatchSizeShouldReturnAllEventsInRepositoryOldestFirst" executed="True" success="True" time="0.000" asserts="3" />
+                        </results>
+                      </test-suite>
+                    </results>
+                  </test-suite>
+                  <test-suite name="Persistence" executed="True" success="True" time="0.016" asserts="0">
+                    <results>
+                      <test-suite name="FileNameTests" executed="True" success="True" time="0.016" asserts="0">
+                        <results>
+                          <test-case name="ProductCatalog.Tests.Writer.Persistence.FileNameTests.ShouldAddAtomExtensionToValueWithoutExtension" executed="True" success="True" time="0.000" asserts="1" />
+                          <test-case name="ProductCatalog.Tests.Writer.Persistence.FileNameTests.ShouldBeAbleToCloneSelf" executed="True" success="True" time="0.000" asserts="2" />
+                          <test-case name="ProductCatalog.Tests.Writer.Persistence.FileNameTests.ShouldBeAbleToCreateTempFileName" executed="True" success="True" time="0.000" asserts="1" />
+                          <test-case name="ProductCatalog.Tests.Writer.Persistence.FileNameTests.ShouldCreateXmlReader" executed="True" success="True" time="0.016" asserts="1" />
+                          <test-case name="ProductCatalog.Tests.Writer.Persistence.FileNameTests.ShouldCreateXmlWriter" executed="True" success="True" time="0.000" asserts="1" />
+                          <test-case name="ProductCatalog.Tests.Writer.Persistence.FileNameTests.ShouldExhibitValueTypeEquality" executed="True" success="True" time="0.000" asserts="9" />
+                          <test-case name="ProductCatalog.Tests.Writer.Persistence.FileNameTests.ShouldPreserveExistingAtomExtension" executed="True" success="True" time="0.000" asserts="1" />
+                          <test-case name="ProductCatalog.Tests.Writer.Persistence.FileNameTests.ShouldThrowExceptionIfSuppliedValueHasDifferentExtension" executed="True" success="True" time="0.000" asserts="0" />
+                          <test-case name="ProductCatalog.Tests.Writer.Persistence.FileNameTests.ToStringShouldReturnStringValueOfFileName" executed="True" success="True" time="0.000" asserts="1" />
+                        </results>
+                      </test-suite>
+                    </results>
+                  </test-suite>
+                  <test-suite name="Tasks" executed="True" success="True" time="0.047" asserts="0">
+                    <results>
+                      <test-suite name="ArchivingRecentEventsFeedTests" executed="True" success="True" time="0.016" asserts="0">
+                        <results>
+                          <test-case name="ProductCatalog.Tests.Writer.Tasks.ArchivingRecentEventsFeedTests.IsNotTerminalState" executed="True" success="True" time="0.000" asserts="1" />
+                          <test-case name="ProductCatalog.Tests.Writer.Tasks.ArchivingRecentEventsFeedTests.ShouldSaveArchivedVersionOfRecentEventsFeedToArchiveDirectory" executed="True" success="True" time="0.000" asserts="2" />
+                          <test-case name="ProductCatalog.Tests.Writer.Tasks.ArchivingRecentEventsFeedTests.ShouldTransitionToUpdatingRecentEventsFeedWithNewRecentEventsFeed" executed="True" success="True" time="0.000" asserts="3" />
+                        </results>
+                      </test-suite>
+                      <test-suite name="CreatingNewRecentEventsFeedTests" executed="True" success="True" time="0.000" asserts="0">
+                        <results>
+                          <test-case name="ProductCatalog.Tests.Writer.Tasks.CreatingNewRecentEventsFeedTests.IsNotTerminalState" executed="True" success="True" time="0.000" asserts="1" />
+                          <test-case name="ProductCatalog.Tests.Writer.Tasks.CreatingNewRecentEventsFeedTests.ShouldTransitionToUpdatingRecentEventsFeed" executed="True" success="True" time="0.000" asserts="3" />
+                        </results>
+                      </test-suite>
+                      <test-suite name="IdentifyingRecentEventsFeedTests" executed="True" success="True" time="0.000" asserts="0">
+                        <results>
+                          <test-case name="ProductCatalog.Tests.Writer.Tasks.IdentifyingRecentEventsFeedTests.IfRecentEventsFeedDoesNotExistOnFileSystemTransitionsToCreatingNewRecentEventsFeed" executed="True" success="True" time="0.000" asserts="2" />
+                          <test-case name="ProductCatalog.Tests.Writer.Tasks.IdentifyingRecentEventsFeedTests.IfRecentEventsFeedExistsOnFileSystemTransitionsToUpdatingRecentEventsFeed" executed="True" success="True" time="0.000" asserts="3" />
+                          <test-case name="ProductCatalog.Tests.Writer.Tasks.IdentifyingRecentEventsFeedTests.IsNotTerminalState" executed="True" success="True" time="0.000" asserts="1" />
+                        </results>
+                      </test-suite>
+                      <test-suite name="NotifyingListenersTests" executed="True" success="True" time="0.000" asserts="0">
+                        <results>
+                          <test-case name="ProductCatalog.Tests.Writer.Tasks.NotifyingListenersTests.IsNotTerminalState" executed="True" success="True" time="0.000" asserts="1" />
+                          <test-case name="ProductCatalog.Tests.Writer.Tasks.NotifyingListenersTests.ShouldNotifyListeners" executed="True" success="True" time="0.000" asserts="2" />
+                          <test-case name="ProductCatalog.Tests.Writer.Tasks.NotifyingListenersTests.ShouldTransitionToTerminating" executed="True" success="True" time="0.000" asserts="1" />
+                        </results>
+                      </test-suite>
+                      <test-suite name="QueryingEventsTests" executed="True" success="True" time="0.000" asserts="0">
+                        <results>
+                          <test-case name="ProductCatalog.Tests.Writer.Tasks.QueryingEventsTests.IfBufferContainsEventsShouldTransitionToIdentifyingCurrentFeed" executed="True" success="True" time="0.000" asserts="2" />
+                          <test-case name="ProductCatalog.Tests.Writer.Tasks.QueryingEventsTests.IfBufferIsEmptyShouldTransitionToTerminate" executed="True" success="True" time="0.000" asserts="1" />
+                          <test-case name="ProductCatalog.Tests.Writer.Tasks.QueryingEventsTests.IsNotTerminalState" executed="True" success="True" time="0.000" asserts="1" />
+                        </results>
+                      </test-suite>
+                      <test-suite name="RequeryingEventsTests" executed="True" success="True" time="0.000" asserts="0">
+                        <results>
+                          <test-case name="ProductCatalog.Tests.Writer.Tasks.RequeryingEventsTests.IsNotTerminalState" executed="True" success="True" time="0.000" asserts="1" />
+                          <test-case name="ProductCatalog.Tests.Writer.Tasks.RequeryingEventsTests.WhenBufferIsEmptyShouldTransitionToSavingCurrentFeed" executed="True" success="True" time="0.000" asserts="2" />
+                          <test-case name="ProductCatalog.Tests.Writer.Tasks.RequeryingEventsTests.WhenBufferReturnsSomeEventsShouldTransitionToUpdatingCurrentFeed" executed="True" success="True" time="0.000" asserts="3" />
+                        </results>
+                      </test-suite>
+                      <test-suite name="SavingRecentEventsFeedTests" executed="True" success="True" time="0.000" asserts="0">
+                        <results>
+                          <test-case name="ProductCatalog.Tests.Writer.Tasks.SavingRecentEventsFeedTests.IsNotTerminalState" executed="True" success="True" time="0.000" asserts="1" />
+                          <test-case name="ProductCatalog.Tests.Writer.Tasks.SavingRecentEventsFeedTests.ShouldSaveRecentEventsFeedToCurrentDirectory" executed="True" success="True" time="0.000" asserts="2" />
+                          <test-case name="ProductCatalog.Tests.Writer.Tasks.SavingRecentEventsFeedTests.ShouldTransitionToNotifyingListeners" executed="True" success="True" time="0.000" asserts="2" />
+                        </results>
+                      </test-suite>
+                      <test-suite name="TerminateTests" executed="True" success="True" time="0.000" asserts="0">
+                        <results>
+                          <test-case name="ProductCatalog.Tests.Writer.Tasks.TerminateTests.IsTerminalState" executed="True" success="True" time="0.000" asserts="1" />
+                        </results>
+                      </test-suite>
+                      <test-suite name="UpdatingRecentEventsFeedTests" executed="True" success="True" time="0.016" asserts="0">
+                        <results>
+                          <test-case name="ProductCatalog.Tests.Writer.Tasks.UpdatingRecentEventsFeedTests.IsNotTerminalState" executed="True" success="True" time="0.000" asserts="1" />
+                          <test-case name="ProductCatalog.Tests.Writer.Tasks.UpdatingRecentEventsFeedTests.WhenListOfEventsIsEmptyShouldTransitionToRequeryingEvents" executed="True" success="True" time="0.000" asserts="2" />
+                          <test-case name="ProductCatalog.Tests.Writer.Tasks.UpdatingRecentEventsFeedTests.WhenRecentEventsFeedHasReachedQuotaAndThereAreNoRemainingEventsShouldTransitionToRequeryingEvents" executed="True" success="True" time="0.000" asserts="2" />
+                          <test-case name="ProductCatalog.Tests.Writer.Tasks.UpdatingRecentEventsFeedTests.WhenRecentEventsFeedHasReachedQuotaShouldTransitionToArchivingRecentEventsFeedWithRemainingEvents" executed="True" success="True" time="0.016" asserts="5" />
+                          <test-case name="ProductCatalog.Tests.Writer.Tasks.UpdatingRecentEventsFeedTests.WhileThereAreEventsInTheListOfEventsAndTheFeedIsUnderQuotaShouldContinueAddingEventsToFeed" executed="True" success="True" time="0.000" asserts="2" />
+                        </results>
+                      </test-suite>
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

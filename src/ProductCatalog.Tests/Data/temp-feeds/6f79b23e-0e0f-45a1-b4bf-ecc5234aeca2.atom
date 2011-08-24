@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title type="text">Restbucks products and promotions</title>
+  <id>urn:uuid:3b6b9ae8-c828-44b3-ac22-8fc01df1f45c</id>
+  <updated>2009-09-11T09:27:47+01:00</updated>
+  <author>
+    <name>Product Catalog</name>
+  </author>
+  <generator>Product Catalog</generator>
+  <link rel="self" href="http://localhost/product-catalog/notifications/recent" />
+  <link rel="via" href="http://localhost/product-catalog/notifications/?page=1" />
+  <entry>
+    <id>tag:restbucks.com,2009-09-11:3</id>
+    <title type="text">event: 4</title>
+    <updated>2009-09-11T09:27:45+01:00</updated>
+    <link rel="related" href="http://product/4" />
+    <link rel="self" href="http://localhost/product-catalog/notifications/notification/3" />
+    <content type="text/plain">
+      <string xmlns="http://schemas.microsoft.com/2003/10/Serialization/">4</string>
+    </content>
+  </entry>
+  <entry>
+    <id>tag:restbucks.com,2009-09-11:2</id>
+    <title type="text">event: 3</title>
+    <updated>2009-09-11T09:27:43+01:00</updated>
+    <link rel="related" href="http://product/3" />
+    <link rel="self" href="http://localhost/product-catalog/notifications/notification/2" />
+    <content type="text/plain">
+      <string xmlns="http://schemas.microsoft.com/2003/10/Serialization/">3</string>
+    </content>
+  </entry>
+  <entry>
+    <id>tag:restbucks.com,2009-09-11:1</id>
+    <title type="text">event: 2</title>
+    <updated>2009-09-11T09:27:41+01:00</updated>
+    <link rel="related" href="http://product/2" />
+    <link rel="self" href="http://localhost/product-catalog/notifications/notification/1" />
+    <content type="text/plain">
+      <string xmlns="http://schemas.microsoft.com/2003/10/Serialization/">2</string>
+    </content>
+  </entry>
+  <entry>
+    <id>tag:restbucks.com,2009-09-11:0</id>
+    <title type="text">event: 1</title>
+    <updated>2009-09-11T09:27:39+01:00</updated>
+    <link rel="related" href="http://product/1" />
+    <link rel="self" href="http://localhost/product-catalog/notifications/notification/0" />
+    <content type="text/plain">
+      <string xmlns="http://schemas.microsoft.com/2003/10/Serialization/">1</string>
+    </content>
+  </entry>
+</feed>
